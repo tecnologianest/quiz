@@ -1,0 +1,106 @@
+header {
+  margin-top: 36px;
+
+  .logo {
+    margin-bottom: 22px;
+  }
+
+  .progress-bar {
+    .progress {
+      height: 0.5rem;
+      //width: 500px;
+    }
+
+    .progress-bar-striped {
+      border-radius: 20px;
+    }
+  }
+}
+
+.stages {
+  margin-top: 30px;
+
+  .stage {
+    &.one {
+      .box-title {
+        h1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 34px;
+          /* identical to box height */
+
+          text-align: center;
+
+          color: #0C65F9;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+
+          color: #171924;
+        }
+      }
+    }
+
+    .box-interact {
+      margin-top: 43px;
+
+      .box-title {
+        height: 48px;
+
+
+        h2 {
+          padding-left: 7px;
+          border-left: 7px #0C65F9 solid;
+          margin: 0px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 27px;
+          line-height: 33px;
+          /* identical to box height */
+
+
+          color: #171924;
+
+        }
+      }
+    }
+
+    .box-card {
+      margin-top: 40px;
+
+      .card {
+        cursor: pointer;
+
+        .check {
+          width: 15px;
+          height: 15px;
+          border: 1px solid #B2B2B2;
+          border-radius: 15px;
+        }
+
+        &:focus, &:hover {
+          .check {
+            background: #0C65F9;
+          }
+        }
+
+        p {
+          margin-top: 28px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+text-align: center;
+          color: #000000;
+
+        }
+      }
+    }
+  }
+}

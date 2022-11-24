@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+p, h1, h2, h3, h4, h5, h6, a, li, span, button,
+input, input::placeholder {
+  font-family: "Inter", sans-serif !important;
+}
+
+header {
+  margin-top: 36px;
+}
+header .logo {
+  margin-bottom: 22px;
+}
+header .progress-bar .progress {
+  height: 0.5rem;
+}
+header .progress-bar .progress-bar-striped {
+  border-radius: 20px;
+}
+
+.stages {
+  margin-top: 30px;
+}
+.stages .stage.one .box-title h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height */
+  text-align: center;
+  color: #0C65F9;
+}
+.stages .stage.one .box-title p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #171924;
+}
+.stages .stage .box-interact {
+  margin-top: 43px;
+}
+.stages .stage .box-interact .box-title {
+  height: 48px;
+}
+.stages .stage .box-interact .box-title h2 {
+  padding-left: 7px;
+  border-left: 7px #0C65F9 solid;
+  margin: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #171924;
+}
+.stages .stage .box-card {
+  margin-top: 40px;
+}
+.stages .stage .box-card .card {
+  cursor: pointer;
+}
+.stages .stage .box-card .card .check {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #B2B2B2;
+  border-radius: 15px;
+}
+.stages .stage .box-card .card:focus .check, .stages .stage .box-card .card:hover .check {
+  background: #0C65F9;
+}
+.stages .stage .box-card .card p {
+  margin-top: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
