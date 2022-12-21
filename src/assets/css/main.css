@@ -8,8 +8,18 @@ input, input::placeholder {
 header {
   margin-top: 36px;
 }
+@media screen and (max-width: 991px) {
+  header {
+    margin-top: 12px;
+  }
+}
 header .logo {
   margin-bottom: 22px;
+}
+@media screen and (max-width: 991px) {
+  header .logo {
+    margin-bottom: 9px;
+  }
 }
 header .progress-bar .progress {
   height: 0.5rem;
@@ -21,7 +31,12 @@ header .progress-bar .progress-bar-striped {
 .stages {
   margin-top: 30px;
 }
-.stages .stage.one .box-title h1 {
+@media screen and (max-width: 991px) {
+  .stages {
+    margin-top: 20px;
+  }
+}
+.stages .stage .box-title h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -30,7 +45,18 @@ header .progress-bar .progress-bar-striped {
   text-align: center;
   color: #0C65F9;
 }
-.stages .stage.one .box-title p {
+@media screen and (max-width: 991px) {
+  .stages .stage .box-title h1 {
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 13px;
+    color: #0C65F9;
+  }
+}
+.stages .stage .box-title p {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -38,13 +64,33 @@ header .progress-bar .progress-bar-striped {
   text-align: center;
   color: #171924;
 }
-.stages .stage .box-interact {
+@media screen and (max-width: 991px) {
+  .stages .stage .box-title p {
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    color: #171924;
+  }
+}
+.stages .box-interact {
   margin-top: 43px;
 }
-.stages .stage .box-interact .box-title {
+@media screen and (max-width: 991px) {
+  .stages .box-interact {
+    margin-top: 23px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .stages .box-interact .box-img img {
+    width: 238px;
+  }
+}
+.stages .box-interact .box-title {
   height: 48px;
 }
-.stages .stage .box-interact .box-title h2 {
+.stages .box-interact .box-title h2 {
   padding-left: 7px;
   border-left: 7px #0C65F9 solid;
   margin: 0px;
@@ -55,29 +101,179 @@ header .progress-bar .progress-bar-striped {
   /* identical to box height */
   color: #171924;
 }
-.stages .stage .box-card {
+@media screen and (max-width: 991px) {
+  .stages .box-interact .box-title h2 {
+    border-left: 4px #0C65F9 solid;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #171924;
+  }
+}
+.stages .box-card {
   margin-top: 40px;
 }
-.stages .stage .box-card .card {
-  cursor: pointer;
+@media screen and (max-width: 991px) {
+  .stages .box-card {
+    margin-top: 23px;
+  }
 }
-.stages .stage .box-card .card .check {
+.stages .box-card .form-check-label {
+  cursor: pointer;
+  border: 2px solid #B2B2B2;
+  border-radius: 8px;
+}
+.stages .box-card .form-check-label:hover, .stages .box-card .form-check-label:focus, .stages .box-card .form-check-label:checked, .stages .box-card .form-check-label.active {
+  border: 2px solid #0C65F9;
+  border-radius: 8px;
+}
+.stages .box-card .form-check-input:checked[type=radio] {
+  background-image: unset;
+}
+.stages .box-card .box-item-card {
+  margin-left: 17px;
+  margin-right: 17px;
+  padding: 0px;
+  width: 191px;
+}
+@media screen and (max-width: 991px) {
+  .stages .box-card .box-item-card {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 100px;
+  }
+}
+.stages .box-card .box-item-card .card {
+  cursor: pointer;
+  border: none;
+}
+.stages .box-card .box-item-card .card .card-body {
+  padding-top: 7px;
+  padding-bottom: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.stages .box-card .box-item-card .card .check {
   width: 15px;
   height: 15px;
   border: 1px solid #B2B2B2;
   border-radius: 15px;
 }
-.stages .stage .box-card .card:focus .check, .stages .stage .box-card .card:hover .check {
+.stages .box-card .box-item-card .card:focus .check, .stages .box-card .box-item-card .card:hover .check {
   background: #0C65F9;
 }
-.stages .stage .box-card .card p {
-  margin-top: 28px;
+.stages .box-card .box-item-card .card img {
+  height: 68px;
+}
+@media screen and (max-width: 991px) {
+  .stages .box-card .box-item-card .card img {
+    height: 49px;
+  }
+}
+.stages .box-card .box-item-card .card p {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #000000;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 991px) {
+  .stages .box-card .box-item-card .card p {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.box-form {
+  padding-left: 47px;
+}
+@media screen and (max-width: 991px) {
+  .box-form {
+    padding-left: unset;
+  }
+}
+.box-form .form label {
+  width: 485px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+}
+@media screen and (max-width: 991px) {
+  .box-form .form label {
+    width: 100%;
+  }
+}
+.box-form .form label.email {
+  width: 450px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+@media screen and (max-width: 991px) {
+  .box-form .form label.email {
+    width: 100%;
+  }
+}
+.box-form .form input[type=email], .box-form .form input[type=text] {
+  width: 485px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-bottom: 23px;
+  height: 52px;
+}
+@media screen and (max-width: 991px) {
+  .box-form .form input[type=email], .box-form .form input[type=text] {
+    width: 100%;
+  }
+}
+.box-form .form .cta {
+  margin-top: 23px;
+}
+.box-form .form .cta .btn-primary {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+footer {
+  position: fixed;
+  bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  text-align: center;
+  color: #8B8B8B;
+}
+footer a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  text-align: center;
+  color: #8B8B8B;
 }
 
 /*# sourceMappingURL=main.css.map */

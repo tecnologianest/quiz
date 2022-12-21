@@ -1,8 +1,14 @@
 header {
   margin-top: 36px;
+  @media screen and (max-width: 991px) {
+    margin-top: 12px;
+  }
 
   .logo {
     margin-bottom: 22px;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 9px;
+    }
   }
 
   .progress-bar {
@@ -19,63 +25,142 @@ header {
 
 .stages {
   margin-top: 30px;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
 
   .stage {
-    &.one {
-      .box-title {
-        h1 {
+    .box-title {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #0C65F9;
+        @media screen and (max-width: 991px) {
+          text-align: left;
           font-style: normal;
           font-weight: 700;
-          font-size: 28px;
-          line-height: 34px;
-          /* identical to box height */
-
-          text-align: center;
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 13px;
 
           color: #0C65F9;
-        }
 
-        p {
+
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #171924;
+        @media screen and (max-width: 991px) {
+          text-align: left;
           font-style: normal;
           font-weight: 700;
-          font-size: 20px;
-          line-height: 24px;
-          text-align: center;
+          font-size: 15px;
+          line-height: 17px;
 
           color: #171924;
         }
       }
     }
+  }
 
-    .box-interact {
-      margin-top: 43px;
+  .box-interact {
+    margin-top: 43px;
+    @media screen and (max-width: 991px) {
+      margin-top: 23px;
+    }
+    .box-img{
+      @media screen and (max-width: 991px) {
+       img{
+         width: 238px
+       }
+      }
+    }
+    .box-title {
+      height: 48px;
 
-      .box-title {
-        height: 48px;
 
-
-        h2 {
-          padding-left: 7px;
-          border-left: 7px #0C65F9 solid;
-          margin: 0px;
+      h2 {
+        padding-left: 7px;
+        border-left: 7px #0C65F9 solid;
+        margin: 0px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+        /* identical to box height */
+        color: #171924;
+        @media screen and (max-width: 991px) {
+          border-left: 4px #0C65F9 solid;
           font-style: normal;
           font-weight: 600;
-          font-size: 27px;
-          line-height: 33px;
-          /* identical to box height */
-
+          font-size: 18px;
+          line-height: 34px;
+          display: flex;
+          align-items: center;
 
           color: #171924;
 
         }
       }
     }
+  }
 
-    .box-card {
-      margin-top: 40px;
+  .box-card {
+    margin-top: 40px;
+    @media screen and (max-width: 991px) {
+      margin-top: 23px;
+    }
+
+    .form-check-label {
+      cursor: pointer;
+      border: 2px solid #B2B2B2;
+      border-radius: 8px;
+
+      &:hover, &:focus, &:checked, &.active {
+        border: 2px solid #0C65F9;
+        border-radius: 8px;
+      }
+    }
+
+
+    .form-check-input:checked[type=radio] {
+      background-image: unset;
+    }
+
+    .box-item-card {
+      margin-left: 17px;
+      margin-right: 17px;
+      padding: 0px;
+      width: 191px;
+      @media screen and (max-width: 991px) {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 100px;
+      }
 
       .card {
         cursor: pointer;
+        border: none;
+
+        .card-body {
+          padding-top: 7px;
+          padding-bottom: 15px;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
 
         .check {
           width: 15px;
@@ -90,17 +175,121 @@ header {
           }
         }
 
+        img {
+          height: 68px;
+          @media screen and (max-width: 991px) {
+            height: 49px;
+          }
+        }
+
         p {
-          margin-top: 28px;
+          margin-top: 20px;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
-text-align: center;
+          text-align: center;
           color: #000000;
+          margin-bottom: 0px;
+          @media screen and (max-width: 991px) {
+            margin-top: 5px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
 
+            color: #000000;
+          }
         }
       }
     }
+  }
+
+
+}
+
+.box-form {
+  padding-left: 47px;
+  @media screen and (max-width: 991px) {
+    padding-left: unset;
+  }
+  .form{
+
+    label{
+      width: 485px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+      color: #000000;
+      &.email{
+        width: 450px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #000000;
+
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+      }
+    }
+
+    input[type="email"], input[type="text"] {
+      width: 485px;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      margin-bottom: 23px;
+      height: 52px;
+      @media screen and (max-width: 991px) {
+        width:100%;
+      }
+    }
+    .cta{
+      margin-top: 23px;
+      .btn-primary{
+        padding-top: 13px;
+        padding-bottom: 13px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #8B8B8B;
+  a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #8B8B8B;
   }
 }
