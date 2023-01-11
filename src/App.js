@@ -5,8 +5,6 @@ import {useState} from "react";
 
 function App() {
     //altere aqui a url de redirecionamento
-    const urlRedirectLending = "https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/?utm_source=gdn-emp";
-    const urlRedirectCreditCard = "https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=gdn-cart";
     const [url] = useState(window.location.pathname);
     const [trataUrl] = useState(url.split("/"));
 
@@ -23,27 +21,17 @@ function App() {
             <BrowserRouter>
                 <Routes>
 
-                    <Route path={"/"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-2022"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-gdn-brasil-13"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-tab"}
-                           element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-tab-2"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
+                    <Route path={"/"} element={<Credit redirectFinal={"https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=gdn-cart"} list={listCredit}/>}/>
 
-                    <Route path={"/1-2"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
-                    <Route path={"/quiz-emprestimo-gdn-brasil-13"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
-                    <Route path={"/quiz-emprestimo-tab"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
+                    <Route path={"/quiz-cartao"} element={<Credit redirectFinal={"https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=gdn-cart"} list={listCredit}/>}/>
+                    <Route path={"/quiz-cartao-fb"} element={<Credit redirectFinal={"https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=fb-cart"} list={listCredit}/>}/>
+                    <Route path={"/quiz-cartao-tk"} element={<Credit redirectFinal={"https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=tiktok-cart"} list={listCredit}/>}/>
+                    <Route path={"/quiz-cartao-tab"} element={<Credit redirectFinal={"https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/?utm_source=tab-cart"} list={listCredit}/>}/>
 
-                    <Route path={"/quiz-cartao-2022/"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-gdn-brasil-13/"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-tab/"}
-                           element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-                    <Route path={"/quiz-cartao-tab-2/"} element={<Credit redirectFinal={urlRedirectCreditCard} list={listCredit}/>}/>
-
-                    <Route path={"/1-2/"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
-                    <Route path={"/quiz-emprestimo-gdn-brasil-13/"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
-                    <Route path={"/quiz-emprestimo-tab/"} element={<Lending redirectFinal={urlRedirectLending} list={listLending}/>}/>
-
+                    <Route path={"/quiz-emprestimo"} element={<Lending redirectFinal={"https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/?utm_source=gdn-emp"} list={listLending}/>}/>
+                    <Route path={"/quiz-emprestimo-fb"} element={<Lending redirectFinal={"https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/?utm_source=fb-cart"} list={listLending}/>}/>
+                    <Route path={"/quiz-emprestimo-tk"} element={<Lending redirectFinal={"https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/?utm_source=tiktok-cart"} list={listLending}/>}/>
+                    <Route path={"/quiz-emprestimo-tab"} element={<Lending redirectFinal={"https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/?utm_source=tab-emp"} list={listLending}/>}/>
 
                 </Routes>
             </BrowserRouter>

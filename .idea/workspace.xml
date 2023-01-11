@@ -2,138 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3660388f-a6f5-40c6-b933-bf865a85df27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/instrucoes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/quiz-proxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_files.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/installed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/composer/platform_check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Success.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/None.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/Option.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/Some.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/Ctype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/bootstrap80.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Mbstring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/bootstrap80.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Php80.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/PhpToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/Attribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/PhpToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/Stringable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/ValueError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Dotenv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/ExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/Loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/LoaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/Resolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Entry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/EntryParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Lexer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Lines.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Parser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/ParserInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Value.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/WriterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/AdapterRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/RepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/File/Paths.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/File/Reader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/FileStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StoreBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StoreInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StringStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Util/Regex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Util/Str.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Validator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/quiz-proxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/credit-card/step1/1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/credit-card/step1/2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/credit-card/step1/3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/credit-card/step1/4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/money/money-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/money/money-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/money/money-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/money/money-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/money/money-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/lending/Lending.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/money-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/money-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/money-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/money-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/money-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/credit/_credit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/credit/_credit.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/credit/Credit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/credit/Credit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +114,10 @@
       <workItem from="1671644246296" duration="1446000" />
       <workItem from="1671645764242" duration="2348000" />
       <workItem from="1671648175594" duration="168000" />
-      <workItem from="1671649068569" duration="1624000" />
+      <workItem from="1671649068569" duration="4116000" />
+      <workItem from="1671680957548" duration="4000" />
+      <workItem from="1671738281594" duration="5000" />
+      <workItem from="1673405119855" duration="2966000" />
     </task>
     <servers />
   </component>
