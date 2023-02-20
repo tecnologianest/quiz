@@ -37,6 +37,7 @@ import {ProgressBar} from "react-bootstrap";
 
 const Credit = (props) => {
     const list = props.list;
+    const nameForm = props.nameForm;
     useEffect(() => {
         localStorage.clear();
     }, []);
@@ -92,31 +93,6 @@ const Credit = (props) => {
             setProgressStatus(progressStatus += progressSteps)
             setStage(stage += 1);
         }
-    }
-
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        setLoading(true);
-        setProgressStatus(progressStatus += progressSteps)
-        setStage(stage += 1);
-        const options = {
-            method: "POST",
-            headers: new Headers({
-                "Content-Type": "application/json; charset=UTF-8",
-                'Cache-Control': 'no-cache'
-            }),
-            body: JSON.stringify({
-                'name': name,
-                'email': email,
-                'list': list
-            }),
-
-        }
-        await fetch(`/backend/quiz-proxy.php`, options);
-
-        setTimeout(function () {
-            window.location.href = urlRedirect;
-        });
     }
 
     useEffect(() => {
@@ -176,115 +152,115 @@ const Credit = (props) => {
             <div className="d-flex justify-content-center ">
                 {stage === 1 &&
                     <div className="col-12 stage stage1">
-                    <div className="col box-title">
-                        <h1>Descubra qual é o melhor cartão de crédito para você</h1>
-                        <p>(Leva menos de 1 minuto)</p>
-                    </div>
-                    <div className="col box-interact">
-                        <div className="row">
-                            <div className="col d-flex align-items-center box-title">
-                                <h2>O que é mais importante para você?</h2>
+                        <div className="col box-title">
+                            <h1>Descubra qual é o melhor cartão de crédito para você</h1>
+                            <p>(Leva menos de 1 minuto)</p>
+                        </div>
+                        <div className="col box-interact">
+                            <div className="row">
+                                <div className="col d-flex align-items-center box-title">
+                                    <h2>O que é mais importante para você?</h2>
+                                </div>
+                            </div>
+
+                            <div className="col box-card">
+                                <div className="row gy-4 justify-content-center">
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option1">
+                                                <div className="card-body h-100 position-relative">
+                                                    <div className="col">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage1" id="option1" value={"option1"}
+                                                               onClick={() => {
+                                                                   handleChecked("option1", "option-stage1", "stage1")
+                                                               }}
+                                                               defaultChecked={localStorage.getItem("option-stage1") === "option1" || false}/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={money1} alt=""/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Limite Crédito Alto</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option2">
+                                                <div className="card-body h-100 position-relative">
+                                                    <div className="col ">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage1" id="option2" onClick={() => {
+                                                            handleChecked("option2", "option-stage1", "stage1")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage1") === "option2" || false}/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={money2} alt="teste"/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Sem Anuidade</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option3">
+                                                <div className="card-body position-relative h-100">
+                                                    <div className="col ">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage1" id="option3" onClick={() => {
+                                                            handleChecked("option3", "option-stage1", "stage1")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage1") === "option3" || false}/>
+
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={money3} alt=""/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Milhas Aéreas</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-auto  box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option4">
+                                                <div className="card-body h-100 position-relative">
+                                                    <div className="col ">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage1" id="option4" onClick={() => {
+                                                            handleChecked("option4", "option-stage1", "stage1")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage1") === "option4" || false}/>
+
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={money4} alt=""/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Aprovação Rápida</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-
-                        <div className="col box-card">
-                            <div className="row gy-4 justify-content-center">
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option1">
-                                            <div className="card-body h-100 position-relative">
-                                                <div className="col">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage1" id="option1" value={"option1"}
-                                                           onClick={() => {
-                                                               handleChecked("option1", "option-stage1", "stage1")
-                                                           }}
-                                                           defaultChecked={localStorage.getItem("option-stage1") === "option1" || false}/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={money1} alt=""/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Limite Crédito Alto</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option2">
-                                            <div className="card-body h-100 position-relative">
-                                                <div className="col ">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage1" id="option2" onClick={() => {
-                                                        handleChecked("option2", "option-stage1", "stage1")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage1") === "option2" || false}/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={money2} alt="teste"/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Sem Anuidade</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option3">
-                                            <div className="card-body position-relative h-100">
-                                                <div className="col ">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage1" id="option3" onClick={() => {
-                                                        handleChecked("option3", "option-stage1", "stage1")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage1") === "option3" || false}/>
-
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={money3} alt=""/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Milhas Aéreas</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className="col-auto  box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option4">
-                                            <div className="card-body h-100 position-relative">
-                                                <div className="col ">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage1" id="option4" onClick={() => {
-                                                        handleChecked("option4", "option-stage1", "stage1")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage1") === "option4" || false}/>
-
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={money4} alt=""/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Aprovação Rápida</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>}
+                    </div>}
                 {stage === 2 &&
                     <div className="col-12 stage stage2">
 
@@ -421,88 +397,88 @@ const Credit = (props) => {
                 {stage === 3 &&
                     <div className="col-12 stage stage3">
 
-                    <div className="col box-interact">
-                        <div className="row">
-                            <div className="col d-flex align-items-center box-title">
-                                <h2>E por último... Você está negativado?</h2>
+                        <div className="col box-interact">
+                            <div className="row">
+                                <div className="col d-flex align-items-center box-title">
+                                    <h2>E por último... Você está negativado?</h2>
+                                </div>
+                            </div>
+
+                            <div className="col box-card">
+                                <div className="row gy-4 justify-content-center">
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option1">
+                                                <div className="card-body h-100 position-relative">
+                                                    <div className="col">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage3" id="option1" onClick={() => {
+                                                            handleChecked("option1", "option-stage3", "stage3")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage3") === "option1" || false}/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={yes1} alt=""/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Sim</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option2">
+                                                <div className="card-body h-100 position-relative">
+                                                    <div className="col ">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage3" id="option2" onClick={() => {
+                                                            handleChecked("option2", "option-stage3", "stage3")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage3") === "option2" || false}/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={no2} alt="teste"/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Não</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-auto box-item-card">
+                                        <div className="card h-100">
+                                            <label className="form-check-label h-100" htmlFor="option3">
+                                                <div className="card-body position-relative h-100">
+                                                    <div className="col ">
+                                                        <input className="form-check-input m-0 p-0" type="radio"
+                                                               name="option-stage3" id="option3" onClick={() => {
+                                                            handleChecked("option3", "option-stage3", "stage3")
+                                                        }}
+                                                               defaultChecked={localStorage.getItem("option-stage3") === "option3" || false}/>
+
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <img src={yesno3} alt=""/>
+                                                    </div>
+                                                    <div className="col d-flex justify-content-center">
+                                                        <p>Já estive</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </div>
                         </div>
-
-                        <div className="col box-card">
-                            <div className="row gy-4 justify-content-center">
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option1">
-                                            <div className="card-body h-100 position-relative">
-                                                <div className="col">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage3" id="option1" onClick={() => {
-                                                        handleChecked("option1", "option-stage3", "stage3")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage3") === "option1" || false}/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={yes1} alt=""/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Sim</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option2">
-                                            <div className="card-body h-100 position-relative">
-                                                <div className="col ">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage3" id="option2" onClick={() => {
-                                                        handleChecked("option2", "option-stage3", "stage3")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage3") === "option2" || false}/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={no2} alt="teste"/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Não</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className="col-auto box-item-card">
-                                    <div className="card h-100">
-                                        <label className="form-check-label h-100" htmlFor="option3">
-                                            <div className="card-body position-relative h-100">
-                                                <div className="col ">
-                                                    <input className="form-check-input m-0 p-0" type="radio"
-                                                           name="option-stage3" id="option3" onClick={() => {
-                                                        handleChecked("option3", "option-stage3", "stage3")
-                                                    }}
-                                                           defaultChecked={localStorage.getItem("option-stage3") === "option3" || false}/>
-
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <img src={yesno3} alt=""/>
-                                                </div>
-                                                <div className="col d-flex justify-content-center">
-                                                    <p>Já estive</p>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>}
+                    </div>}
                 {stage >= 4 &&
                     <div className="col-12 stage box-form">
 
@@ -542,15 +518,17 @@ const Credit = (props) => {
                                                     momento.</label>
                                             </div>
                                             <input type="hidden" name="mauticform[formId]"
-                                                   id="mauticform_formdoemprestimo_id" value={list} />
+                                                   id="mauticform_formdoemprestimo_id" value={list}/>
                                             <input type="hidden" name="mauticform[return]"
-                                                   id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect} />
-                                            <input type="hidden" name="mauticform[formName]" id="mauticform_formdocartcredito_name" value="formdocartcredito"/>
+                                                   id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect}/>
+                                            <input type="hidden" name="mauticform[formName]"
+                                                   id="mauticform_formdocartcredito_name" value={nameForm}/>
 
 
                                             <div className="col cta">
                                                 <button type="submit" className="btn btn-primary w-100"
-                                                        name="mauticform[submit]" id="mauticform_input_formdoemprestimo_submit">
+                                                        name="mauticform[submit]"
+                                                        id="mauticform_input_formdoemprestimo_submit">
                                                     Ver meu Cartão de Crédito
                                                 </button>
                                             </div>

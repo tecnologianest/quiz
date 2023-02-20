@@ -40,6 +40,8 @@ import iconLoading from "../../assets/images/loading.png";
 const Lending = (props) => {
 
     const list = props.list;
+    const nameForm = props.nameForm;
+
     useEffect(() => {
         localStorage.clear();
     }, []);
@@ -99,6 +101,7 @@ const Lending = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        // Código usado no active campaign
         /*
         setLoading(true);
         setProgressStatus(progressStatus += progressSteps)
@@ -121,21 +124,6 @@ const Lending = (props) => {
        setTimeout(function () {
             window.location.href = urlRedirect;
         });*/
-
-        let urlBase = "https://mautic.estoaresearch.com";
-        const tokenOptions = {
-            method: "POST", headers: new Headers({
-                "Content-Type": "application/json; charset=UTF-8",
-            }), body: JSON.stringify({
-                client_id: "3_1d7adkjz3kckokswwwcc4wwg08g04kkk0ck04w84o00g8ockkg",
-                client_secret: "4zn3hl7ey1csc044k8gk8ggwggw88cwokgsk4owg00kckwcwkk",
-                grant_type: "authorization_code",
-                redirect_uri: "http://localhost/mautic/",
-                code: "UNIQUE_CODE_STRING"
-            }),
-        }
-
-        await fetch(urlBase + "/oauth/v2/token", tokenOptions).then(res => console.log(res.json()));
 
     }
 
@@ -730,20 +718,20 @@ const Lending = (props) => {
                                                 momento.</label>
                                         </div>
                                         <input type="hidden" name="mauticform[formId]"
-                                               id="mauticform_formdoemprestimo_id" value="7" />
+                                               id="mauticform_formdoemprestimo_id" value={list}/>
                                         <input type="hidden" name="mauticform[return]"
-                                                   id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect} />
+                                               id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect}/>
                                         <input type="hidden" name="mauticform[formName]"
-                                                       id="mauticform_formdoemprestimo_name"
-                                                       value="formdoemprestimo" />
+                                               id="mauticform_formdoemprestimo_name"
+                                               value={nameForm}/>
 
-                                                    <div className="col cta">
-                                                        <button type="submit" className="btn btn-primary w-100"
-                                                                name="mauticform[submit]" id="mauticform_input_formdoemprestimo_submit">
-                                                            Ver meu empréstimo
-                                                        </button>
-                                                    </div>
-
+                                        <div className="col cta">
+                                            <button type="submit" className="btn btn-primary w-100"
+                                                    name="mauticform[submit]"
+                                                    id="mauticform_input_formdoemprestimo_submit">
+                                                Ver meu empréstimo
+                                            </button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
