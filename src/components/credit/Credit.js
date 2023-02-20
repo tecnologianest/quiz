@@ -521,20 +521,17 @@ const Credit = (props) => {
                                     <div
                                         className="col-auto d-flex align-items-center mx-lg-5 mt-5 mt-lg-0 order-0 order-lg-1 position-relative">
 
-                                        <form className={"col-12 form"} onSubmit={handleSubmit}>
+                                        <form className={"col-12 form"} role="form" method="post"
+                                              action={`https://mautic.estoaresearch.com/form/submit?formId=${list}`}>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputEmail1"
                                                        className="form-label">Nome</label>
-                                                <input type="text" className="form-control" id="exampleInputEmail1"
-                                                       aria-describedby="emailHelp"
-                                                       onChange={(e) => setName(e.target.value)} required={true}/>
+                                                <input type="text" className="form-control" name="mauticform[nome]"/>
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputPassword1"
                                                        className="form-label">E-mail</label>
-                                                <input type="email" className="form-control"
-                                                       id="exampleInputPassword1"
-                                                       onChange={(e) => setEmail(e.target.value)} required={true}/>
+                                                <input type="email" className="form-control" name="mauticform[email]"/>
                                             </div>
                                             <div className="mb-3 form-check">
                                                 <input type="checkbox" className="form-check-input"
@@ -544,13 +541,17 @@ const Credit = (props) => {
                                                     comunicações da ESTOA, que poderão ser canceladas a qualquer
                                                     momento.</label>
                                             </div>
+                                            <input type="hidden" name="mauticform[formId]"
+                                                   id="mauticform_formdoemprestimo_id" value={list} />
+                                            <input type="hidden" name="mauticform[return]"
+                                                   id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect} />
+                                            <input type="hidden" name="mauticform[formName]" id="mauticform_formdocartcredito_name" value="formdocartcredito"/>
+
+
                                             <div className="col cta">
                                                 <button type="submit" className="btn btn-primary w-100"
-                                                        disabled={loading}>
-
-                                                    {!loading && <span>Ver meu empréstimo</span>}
-                                                    {loading && <span>Analisando as Informações...</span>}
-
+                                                        name="mauticform[submit]" id="mauticform_input_formdoemprestimo_submit">
+                                                    Ver meu Cartão de Crédito
                                                 </button>
                                             </div>
 

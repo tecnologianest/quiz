@@ -14,8 +14,8 @@ function App() {
         window.location.href = urlTotal;
     }
 
-    const listCredit = 3;
-    const listLending = 2;
+    const listCredit = 8;
+    const listLending = 7;
     return (
         <div className="App">
             <BrowserRouter>
