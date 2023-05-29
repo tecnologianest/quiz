@@ -1,132 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="3660388f-a6f5-40c6-b933-bf865a85df27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/locales/en/en-AZ.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/en/en-US.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/es/es-CL.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/es/es-CO.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/es/es-MX.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/es/es-PE.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/es/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/pt/pt-BR.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/instrucoes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/quiz-proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/InstalledVersions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/installed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/composer/platform_check.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Result.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/graham-campbell/result-type/src/Success.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/None.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/Option.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/phpoption/phpoption/src/PhpOption/Some.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/Ctype.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-ctype/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Mbstring.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/bootstrap80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-mbstring/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Php80.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/PhpToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/Attribute.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/PhpToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/Stringable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/Resources/stubs/ValueError.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/symfony/polyfill-php80/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Dotenv.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/ExceptionInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/Loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/LoaderInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Loader/Resolver.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Entry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/EntryParser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Lexer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Lines.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Parser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/ParserInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Parser/Value.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReaderInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/Adapter/WriterInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/AdapterRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Repository/RepositoryInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/File/Paths.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/File/Reader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/FileStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StoreBuilder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StoreInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Store/StringStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Util/Regex.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Util/Str.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/vendor/vlucas/phpdotenv/src/Validator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/quiz-proxy.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/calendar/calendar-5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/group/3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/group/3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/icons/group/4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/icons/group/4.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/credit/Credit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/credit/Credit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/lending/Lending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lending/Lending.js" afterDir="false" />
     </list>
@@ -140,7 +17,6 @@
       <list>
         <option value="SCSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -158,39 +34,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bnmar/Documents/jobs/quiz-languages/quiz-espanhol/src/locales/en",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/brunonogueiramartins/Sites/localhost/quiz&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales\en" />
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\routes" />
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales" />
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales\es" />
       <recent name="C:\Users\bnmar\Documents\jobs\quiz\public" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\assets\images\icons\credit-card\step1" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\components" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\public\backend" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\public\config-php" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales" />
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales\es" />
-      <recent name="C:\Users\bnmar\Documents\jobs\quiz-languages\quiz-espanhol\src\locales\es-CL" />
       <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\assets\images\icons\credit-card" />
       <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\assets\images\icons\calendar\old" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\assets\images\icons\money" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quiz\src\assets\images\icons" />
+      <recent name="C:\Users\bnmar\Documents\jobs\quizz\src\assets\scss" />
     </key>
   </component>
   <component name="RunManager">
@@ -253,24 +125,6 @@
       <workItem from="1673479828858" duration="181000" />
       <workItem from="1676872932312" duration="3206000" />
       <workItem from="1676908206619" duration="538000" />
-      <workItem from="1676916215280" duration="387000" />
-      <workItem from="1676921546609" duration="2890000" />
-      <workItem from="1677073686718" duration="672000" />
-      <workItem from="1677125457359" duration="13000" />
-      <workItem from="1678991790197" duration="881000" />
-      <workItem from="1679332918760" duration="805000" />
-      <workItem from="1679335541891" duration="1006000" />
-      <workItem from="1679369530184" duration="2758000" />
-      <workItem from="1679410710573" duration="14885000" />
-      <workItem from="1679457395139" duration="31693000" />
-      <workItem from="1679923141706" duration="42000" />
-      <workItem from="1679927039501" duration="5948000" />
-      <workItem from="1680013568391" duration="4519000" />
-      <workItem from="1680199233062" duration="8589000" />
-      <workItem from="1680495542546" duration="2990000" />
-      <workItem from="1683811398624" duration="2155000" />
-      <workItem from="1683861398291" duration="292000" />
-      <workItem from="1685383135173" duration="1933000" />
     </task>
     <servers />
   </component>

@@ -2,8 +2,7 @@ import {useEffect, useState} from "react";
 import logo from "../../assets/images/brand/logo.svg"
 import arrowLeft from "../../assets/images/icons/arrow-left.svg"
 import arrowRight from "../../assets/images/icons/arrow-right.svg"
-import {useTranslation} from "react-i18next";
-import {changeLanguage} from "i18next";
+
 // stage 1
 import money1 from "../../assets/images/icons/money/money-1.svg"
 import money2 from "../../assets/images/icons/money/money-2.svg"
@@ -36,22 +35,30 @@ import finalbg from "../../assets/images/icons/final/bg.svg"
 
 import {ProgressBar} from "react-bootstrap";
 
+import iconLoading from "../../assets/images/loading.png";
 
-const Lending = ({lang, redirectFinal}) => {
+const Lending = (props) => {
 
-    const {t} = useTranslation();
+    const list = props.list;
+    const nameForm = props.nameForm;
 
     useEffect(() => {
         localStorage.clear();
-        changeLanguage(lang)
     }, []);
 
-    const [urlRedirect] = useState(redirectFinal)
+    const [urlRedirect] = useState(props.redirectFinal)
 
     let [stage, setStage] = useState(1);
     const [totalStage] = useState(4);
 
+
     const [lastStage, setLastStage] = useState(0);
+
+    const [email, setEmail] = useState(null);
+    const [name, setName] = useState(null);
+
+
+    const [loading, setLoading] = useState(false);
 
     const [progressSteps] = useState(100 / totalStage);
 
@@ -60,6 +67,7 @@ const Lending = ({lang, redirectFinal}) => {
         let global = document.querySelector(`.${globalStage}`);
         let boxCards = global.querySelectorAll(".box-item-card");
         labelActive(boxCards, optionStage, id);
+
     }
 
     function labelActive(boxCards, optionStage, id) {
@@ -89,6 +97,34 @@ const Lending = ({lang, redirectFinal}) => {
             setProgressStatus(progressStatus += progressSteps)
             setStage(stage += 1);
         }
+    }
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        // Código usado no active campaign
+        /*
+        setLoading(true);
+        setProgressStatus(progressStatus += progressSteps)
+        setStage(stage += 1);
+        const options = {
+            method: "POST",
+            headers: new Headers({
+                "Content-Type": "application/json; charset=UTF-8",
+                'Cache-Control': 'no-cache'
+            }),
+            body: JSON.stringify({
+                'name': name,
+                'email': email,
+                'list': list
+            }),
+
+        }
+        await fetch(`/backend/quiz-proxy.php`, options);
+
+       setTimeout(function () {
+            window.location.href = urlRedirect;
+        });*/
+
     }
 
     useEffect(() => {
@@ -166,13 +202,13 @@ const Lending = ({lang, redirectFinal}) => {
             <div className="d-flex justify-content-center ">
                 {stage === 1 && <div className="col-12 stage stage1">
                     <div className="col box-title">
-                        <h1>{t("lending.titles.primary")}</h1>
-                        <p>{t("lending.titles.secundary")}</p>
+                        <h1>Descubra qual é o melhor empréstimo para você</h1>
+                        <p>(Leva menos de 1 minuto)</p>
                     </div>
                     <div className="col box-interact">
                         <div className="row">
                             <div className="col d-flex align-items-center box-title">
-                                <h2>{t("lending.stageOne.titleStage")}</h2>
+                                <h2>De quanto precisa?</h2>
                             </div>
                         </div>
 
@@ -195,7 +231,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={money1} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageOne.cardOne")}</p>
+                                                    <p>Até R$ 1.000,00</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -217,7 +253,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={money2} alt="teste"/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageOne.cardTwo")}</p>
+                                                    <p>Até R$ 2.000,00</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -240,7 +276,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={money3} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageOne.cardThree")}</p>
+                                                    <p>Até R$ 5.000,00</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -263,7 +299,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={money4} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageOne.cardFour")}</p>
+                                                    <p>Até R$ 15.000,00</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -286,7 +322,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={money5} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageOne.cardFive")}</p>
+                                                    <p>Mais de R$ 15.000,00</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -303,7 +339,7 @@ const Lending = ({lang, redirectFinal}) => {
                     <div className="col box-interact">
                         <div className="row">
                             <div className="col d-flex align-items-center box-title">
-                                <h2>{t("lending.stageTwo.titleStage")}</h2>
+                                <h2>Em quanto tempo gostaria de pagar?</h2>
                             </div>
                         </div>
 
@@ -325,7 +361,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={calendar1} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageTwo.cardOne")}</p>
+                                                    <p>Até 1 ano</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -347,7 +383,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={calendar2} alt="teste"/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageTwo.cardTwo")}</p>
+                                                    <p>Até 2 anos</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -370,7 +406,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={calendar3} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageTwo.cardThree")}</p>
+                                                    <p>Até 3 anos</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -393,7 +429,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={calendar4} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageTwo.cardFour")}</p>
+                                                    <p>Até 4 anos</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -416,7 +452,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={calendar5} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageTwo.cardFive")}</p>
+                                                    <p>Até 5 anos ou mais</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -433,7 +469,7 @@ const Lending = ({lang, redirectFinal}) => {
                     <div className="col box-interact">
                         <div className="row">
                             <div className="col d-flex align-items-center box-title">
-                                <h2>{t("lending.stageThree.titleStage")}</h2>
+                                <h2>Em qual grupo você se encaixa?</h2>
                             </div>
                         </div>
 
@@ -455,7 +491,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={group1} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageThree.cardOne")}</p>
+                                                    <p>Autônomo / MEI</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -477,7 +513,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={group2} alt="teste"/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageThree.cardTwo")}</p>
+                                                    <p>CLT</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -500,7 +536,8 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={group3} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageThree.cardThree")}</p>
+                                                    <p>Aposentadoria/
+                                                        Pensionista</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -523,7 +560,8 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={group4} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageThree.cardFour")}</p>
+                                                    <p>Funcionário
+                                                        Público</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -546,7 +584,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={group5} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageThree.cardFive")}</p>
+                                                    <p>Desempregado</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -563,7 +601,7 @@ const Lending = ({lang, redirectFinal}) => {
                     <div className="col box-interact">
                         <div className="row">
                             <div className="col d-flex align-items-center box-title">
-                                <h2>{t("lending.stageFour.titleStage")}</h2>
+                                <h2>E por último... Você está negativado?</h2>
                             </div>
                         </div>
 
@@ -585,7 +623,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={yes1} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageFour.cardOne")}</p>
+                                                    <p>Sim</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -607,7 +645,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={no2} alt="teste"/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageFour.cardTwo")}</p>
+                                                    <p>Não</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -630,7 +668,7 @@ const Lending = ({lang, redirectFinal}) => {
                                                     <img src={yesno3} alt=""/>
                                                 </div>
                                                 <div className="col d-flex justify-content-center">
-                                                    <p>{t("lending.stageFour.cardThree")}</p>
+                                                    <p>Já estive</p>
                                                 </div>
                                             </div>
                                         </label>
@@ -646,8 +684,8 @@ const Lending = ({lang, redirectFinal}) => {
 
                     <div className="col box-interact">
                         <div className="col box-title">
-                            <h1>{t("lending.stageFinal.titleStage")}</h1>
-                            <p>{t("lending.stageFinal.subTitleStage")}</p>
+                            <h1>Estamos quase lá!</h1>
+                            <p>Insira seus dados para ver nossa recomendação</p>
                         </div>
                         <div className="col-12 position-relative">
 
@@ -660,37 +698,38 @@ const Lending = ({lang, redirectFinal}) => {
                                     className="col-auto d-flex align-items-center mx-lg-5 mt-5 mt-lg-0 order-0 order-lg-1 position-relative">
 
                                     <form className={"col-12 form"} role="form" method="post"
-                                          action={`https://mkt.estoaresearch.com/form/submit?formId=${t("lending.list")}`}>
+                                          action={`https://mautic.estoaresearch.com/form/submit?formId=${list}`}>
                                         <div className="mb-3">
                                             <label htmlFor="exampleInputEmail1"
-                                                   className="form-label">{t("lending.stageFinal.inputName")}</label>
+                                                   className="form-label">Nome</label>
                                             <input type="text" className="form-control" name="mauticform[nome]"/>
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="exampleInputPassword1"
-                                                   className="form-label">{t("lending.stageFinal.inputEmail")}</label>
+                                                   className="form-label">E-mail</label>
                                             <input type="email" className="form-control" name="mauticform[email]"/>
                                         </div>
                                         <div className="mb-3 form-check">
                                             <input type="checkbox" className="form-check-input"
                                                    id="exampleCheck1" defaultChecked={true}/>
-                                            <label className="form-check-label email"
-                                                   htmlFor="exampleCheck1">{t("lending.stageFinal.validCheck")}</label>
+                                            <label className="form-check-label email" htmlFor="exampleCheck1">Li
+                                                e concordo com os termos de serviço e aceito receber
+                                                comunicações da ESTOA, que poderão ser canceladas a qualquer
+                                                momento.</label>
                                         </div>
                                         <input type="hidden" name="mauticform[formId]"
-                                               id={`"mauticform_${t("lending.nameForm")}_id"`} value={t("lending.list")}/>
+                                               id="mauticform_formdoemprestimo_id" value={list}/>
                                         <input type="hidden" name="mauticform[return]"
-                                               id={`""mauticform_${t("lending.nameForm")}_return""`}
-                                               defaultValue={t("lending.url") + urlRedirect}/>
+                                               id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect}/>
                                         <input type="hidden" name="mauticform[formName]"
-                                               id={`"mauticform_${t("lending.nameForm")}_name"`}
-                                               value={t("lending.nameForm")}/>
+                                               id="mauticform_formdoemprestimo_name"
+                                               value={nameForm}/>
 
                                         <div className="col cta">
                                             <button type="submit" className="btn btn-primary w-100"
                                                     name="mauticform[submit]"
                                                     id="mauticform_input_formdoemprestimo_submit">
-                                                {t("lending.stageFinal.buttonTitle")}
+                                                Ver meu empréstimo
                                             </button>
                                         </div>
                                     </form>
@@ -705,8 +744,8 @@ const Lending = ({lang, redirectFinal}) => {
         </section>
 
         <footer className={"w-100 d-flex justify-content-center"}>
-            <a href="#">{t("termsOfUse")}</a>&nbsp;|&nbsp;
-            <a href="#">{t("privacyPolicy")}</a>
+            <a href="#">Termos de uso </a>&nbsp;|&nbsp;
+            <a href="#">Política de privacidade</a>
         </footer>
     </main>);
 }
