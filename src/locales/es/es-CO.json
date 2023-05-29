@@ -1,0 +1,91 @@
+{
+  "translations": {
+    "credit": {
+      "titles": {
+        "primary": "Descubra qué tarjeta de crédito es la más adecuada para usted",
+        "secundary": "Responde a las siguientes preguntas y nuestra inteligencia artificial elegirá la mejor tarjeta para ti."
+      },
+      "stageOne": {
+        "titleStage": "¿Qué es lo más importante para usted?",
+        "cardOne": "Tener un límite alto",
+        "cardTwo": "Una aprobación rápida",
+        "cardThree": "Sin Checar Buró",
+        "cardFour": "Anualidad gratuita"
+      },
+      "stageTwo": {
+        "titleStage": "¿En qué grupo se encuentra usted?",
+        "cardOne": "Emprendedor",
+        "cardTwo": "Billetera firmada",
+        "cardThree": "Jubilado",
+        "cardFour": "Empleado público",
+        "cardFive": "Desempleado"
+      },
+      "stageThree": {
+        "titleStage": "¿Estás en el buró de crédito?",
+        "cardOne": "Sí",
+        "cardTwo": "No",
+        "cardThree": "Ya estuve"
+      },
+      "stageFinal": {
+        "titleStage": "¡Lo hemos encontrado!",
+        "subTitleStage": "Ya falta poco, Introduzca sus datos para ver la tarjeta de crédito que hemos encontrado.",
+        "inputName": "Introduzca su nombre...",
+        "inputEmail": "Introduce tu email...",
+        "validCheck": "He leído y acepto los términos de servicio, y acepto recibir comunicaciones de ESTOA, las cuales podrán ser canceladas en cualquier momento.",
+        "buttonTitle": "¡VER TARJETA!"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/enterate-de-las-principales-ventajas-y-beneficios-de-la-tarjeta-de-credito-joven-mastercard-bancolombia/",
+      "list": 26,
+      "nameForm": "cartaoformulariocolombia"
+    },
+    "lending": {
+      "titles": {
+        "primary": "Descubra qué préstamo es el más adecuado para usted",
+        "secundary": "Responde a las siguientes preguntas y nuestra inteligencia artificial elegirá el mejor préstamo para ti."
+      },
+      "stageOne": {
+        "titleStage": "¿Cuánto necesitas?",
+        "cardOne": "$1.000.000 hasta $2.000.000",
+        "cardTwo": "$2.000.000 hasta $5.000.000",
+        "cardThree": "$5.000.000 hasta $8.000.000",
+        "cardFour": "$8.000.000 hasta $10.000.000",
+        "cardFive": "Más de $10.000.000"
+      },
+      "stageTwo": {
+        "titleStage": "¿En cuánto tiempo quieres pagar?",
+        "cardOne": "12 meses",
+        "cardTwo": "24 meses",
+        "cardThree": "36 meses",
+        "cardFour": "60 meses",
+        "cardFive": "84 meses"
+      },
+      "stageThree": {
+        "titleStage": "¿Qué tipo de préstamo buscas?",
+        "cardOne": "Emprendedor",
+        "cardTwo": "Billetera firmada",
+        "cardThree": "Jubilado",
+        "cardFour": "Empleado público",
+        "cardFive": "Desempleado"
+      },
+      "stageFour": {
+        "titleStage": "¿Estás en el buró de crédito?",
+        "cardOne": "Sí",
+        "cardTwo": "No",
+        "cardThree": "ya estuve/he estado"
+      },
+      "stageFinal": {
+        "titleStage": "¡Lo hemos encontrado!",
+        "subTitleStage": "Ya falta poco, Introduzca sus datos para ver la tarjeta de crédito que hemos encontrado.",
+        "inputName": "Introduzca su nombre...",
+        "inputEmail": "Introduce tu email...",
+        "validCheck": "He leído y acepto los términos de servicio, y acepto recibir comunicaciones de ESTOA, las cuales podrán ser canceladas en cualquier momento.",
+        "buttonTitle": "¡VER TARJETA!"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/descubra-como-crediexpress-fijo-libre-inversion-davivienda-puede-cambiar-su-vida-financiera/",
+      "list": 25,
+      "nameForm": "emprestimoformulariocolombia"
+    },
+    "termsOfUse": "Terminos de uso",
+    "privacyPolicy": "Política de privacidad"
+  }
+}

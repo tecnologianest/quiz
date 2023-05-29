@@ -1,7 +1,9 @@
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import logo from "../../assets/images/brand/logo.svg"
 import arrowLeft from "../../assets/images/icons/arrow-left.svg"
 import arrowRight from "../../assets/images/icons/arrow-right.svg"
+
+import {i18n} from "../../locales/i18n"
 
 // stage 1
 import money1 from "../../assets/images/icons/credit-card/step1/1.svg"
@@ -33,28 +35,26 @@ import finalbg from "../../assets/images/icons/final/bg.svg"
 
 
 import {ProgressBar} from "react-bootstrap";
+import {useParams} from "react-router";
+import {changeLanguage} from "i18next";
+import {useTranslation} from "react-i18next";
 
 
-const Credit = (props) => {
-    const list = props.list;
-    const nameForm = props.nameForm;
+const Credit = ({lang,  redirectFinal}) => {
+
+    const {t} = useTranslation();
+
     useEffect(() => {
         localStorage.clear();
-    }, []);
+        changeLanguage(lang);
+    }, [])
 
-    const [urlRedirect] = useState(props.redirectFinal)
+    const [urlRedirect] = useState(redirectFinal)
 
     let [stage, setStage] = useState(1);
     const [totalStage] = useState(4);
 
-
     const [lastStage, setLastStage] = useState(0);
-
-    const [email, setEmail] = useState(null);
-    const [name, setName] = useState(null);
-
-
-    const [loading, setLoading] = useState(false);
 
     const [progressSteps] = useState(100 / totalStage);
 
@@ -109,7 +109,6 @@ const Credit = (props) => {
             boxCards.forEach(box => {
                 let label = box.querySelector(".form-check-label");
                 let labelId = label.getAttribute("for");
-
                 if (labelId === localStorage.getItem(`option-stage${stage}`)) {
                     label.classList.add("active");
                 } else {
@@ -153,13 +152,13 @@ const Credit = (props) => {
                 {stage === 1 &&
                     <div className="col-12 stage stage1">
                         <div className="col box-title">
-                            <h1>Descubra qual é o melhor cartão de crédito para você</h1>
-                            <p>(Leva menos de 1 minuto)</p>
+                            <h1>{t("credit.titles.primary")}</h1>
+                            <p>{t("credit.titles.secundary")}</p>
                         </div>
                         <div className="col box-interact">
                             <div className="row">
                                 <div className="col d-flex align-items-center box-title">
-                                    <h2>O que é mais importante para você?</h2>
+                                    <h2>{t("credit.stageOne.titleStage")}</h2>
                                 </div>
                             </div>
 
@@ -182,7 +181,7 @@ const Credit = (props) => {
                                                         <img src={money1} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Limite Crédito Alto</p>
+                                                        <p>{t("credit.stageOne.cardOne")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -204,7 +203,7 @@ const Credit = (props) => {
                                                         <img src={money2} alt="teste"/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Sem Anuidade</p>
+                                                        <p>{t("credit.stageOne.cardTwo")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -227,7 +226,7 @@ const Credit = (props) => {
                                                         <img src={money3} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Milhas Aéreas</p>
+                                                        <p>{t("credit.stageOne.cardThree")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -250,7 +249,7 @@ const Credit = (props) => {
                                                         <img src={money4} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Aprovação Rápida</p>
+                                                        <p>{t("credit.stageOne.cardFour")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -267,7 +266,7 @@ const Credit = (props) => {
                         <div className="col box-interact">
                             <div className="row">
                                 <div className="col d-flex align-items-center box-title">
-                                    <h2>Em qual grupo você se encaixa?</h2>
+                                    <h2>{t("credit.stageTwo.titleStage")}</h2>
                                 </div>
                             </div>
 
@@ -289,7 +288,7 @@ const Credit = (props) => {
                                                         <img src={group1} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Autônomo / MEI</p>
+                                                        <p>{t("credit.stageTwo.cardOne")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -311,7 +310,7 @@ const Credit = (props) => {
                                                         <img src={group2} alt="teste"/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>CLT</p>
+                                                        <p>{t("credit.stageTwo.cardTwo")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -334,8 +333,7 @@ const Credit = (props) => {
                                                         <img src={group3} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Aposentadoria/
-                                                            Pensionista</p>
+                                                        <p>{t("credit.stageTwo.cardThree")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -358,8 +356,7 @@ const Credit = (props) => {
                                                         <img src={group4} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Funcionário
-                                                            Público</p>
+                                                        <p>{t("credit.stageTwo.cardFour")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -382,7 +379,7 @@ const Credit = (props) => {
                                                         <img src={group5} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Desempregado</p>
+                                                        <p>{t("credit.stageTwo.cardFive")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -400,7 +397,7 @@ const Credit = (props) => {
                         <div className="col box-interact">
                             <div className="row">
                                 <div className="col d-flex align-items-center box-title">
-                                    <h2>E por último... Você está negativado?</h2>
+                                    <h2>{t("credit.stageThree.titleStage")}</h2>
                                 </div>
                             </div>
 
@@ -422,7 +419,7 @@ const Credit = (props) => {
                                                         <img src={yes1} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Sim</p>
+                                                        <p>{t("credit.stageThree.cardOne")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -444,7 +441,7 @@ const Credit = (props) => {
                                                         <img src={no2} alt="teste"/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Não</p>
+                                                        <p>{t("credit.stageThree.cardTwo")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -467,7 +464,7 @@ const Credit = (props) => {
                                                         <img src={yesno3} alt=""/>
                                                     </div>
                                                     <div className="col d-flex justify-content-center">
-                                                        <p>Já estive</p>
+                                                        <p>{t("credit.stageThree.cardThree")}</p>
                                                     </div>
                                                 </div>
                                             </label>
@@ -484,8 +481,8 @@ const Credit = (props) => {
 
                         <div className="col box-interact">
                             <div className="col box-title">
-                                <h1>Estamos quase lá!</h1>
-                                <p>Insira seus dados para ver nossa recomendação</p>
+                                <h1>{t("credit.stageFinal.titleStage")}</h1>
+                                <p>{t("credit.stageFinal.subTitleStage")}</p>
                             </div>
                             <div className="col-12 position-relative">
 
@@ -498,38 +495,39 @@ const Credit = (props) => {
                                         className="col-auto d-flex align-items-center mx-lg-5 mt-5 mt-lg-0 order-0 order-lg-1 position-relative">
 
                                         <form className={"col-12 form"} role="form" method="post"
-                                              action={`https://mautic.estoaresearch.com/form/submit?formId=${list}`}>
+                                              action={`https://mkt.estoaresearch.com/form/submit?formId=${t("credit.list")}`}>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputEmail1"
-                                                       className="form-label">Nome</label>
+                                                       className="form-label">{t("credit.stageFinal.inputName")}</label>
                                                 <input type="text" className="form-control" name="mauticform[nome]"/>
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputPassword1"
-                                                       className="form-label">E-mail</label>
+                                                       className="form-label">{t("credit.stageFinal.inputEmail")}</label>
                                                 <input type="email" className="form-control" name="mauticform[email]"/>
                                             </div>
                                             <div className="mb-3 form-check">
                                                 <input type="checkbox" className="form-check-input"
                                                        id="exampleCheck1" defaultChecked={true}/>
-                                                <label className="form-check-label email" htmlFor="exampleCheck1">Li
-                                                    e concordo com os termos de serviço e aceito receber
-                                                    comunicações da ESTOA, que poderão ser canceladas a qualquer
-                                                    momento.</label>
+                                                <label className="form-check-label email"
+                                                       htmlFor="exampleCheck1">{t("credit.stageFinal.validCheck")}</label>
                                             </div>
                                             <input type="hidden" name="mauticform[formId]"
-                                                   id="mauticform_formdoemprestimo_id" value={list}/>
+                                                   id={`"mauticform_${t("credit.nameForm")}_id"`}
+                                                   value={t("credit.list")}/>
                                             <input type="hidden" name="mauticform[return]"
-                                                   id="mauticform_formdoemprestimo_return" defaultValue={urlRedirect}/>
+                                                   id={`"mauticform_${t("credit.nameForm")}_return"`} 
+                                                   defaultValue={t("credit.url") + urlRedirect}/>
                                             <input type="hidden" name="mauticform[formName]"
-                                                   id="mauticform_formdocartcredito_name" value={nameForm}/>
+                                                   id={`"mauticform_${t("credit.nameForm")}_name"`}
+                                                   value={t("credit.nameForm")}/>
 
 
                                             <div className="col cta">
                                                 <button type="submit" className="btn btn-primary w-100"
                                                         name="mauticform[submit]"
-                                                        id="mauticform_input_formdoemprestimo_submit">
-                                                    Ver meu Cartão de Crédito
+                                                        id={`"mauticform_input_${t("credit.nameForm")}_submit"`}>
+                                                    {t("credit.stageFinal.buttonTitle")}
                                                 </button>
                                             </div>
 
@@ -539,13 +537,11 @@ const Credit = (props) => {
                             </div>
                         </div>
                     </div>}
-
             </div>
         </section>
-
         <footer className={"w-100 d-flex justify-content-center"}>
-            <a href="#">Termos de uso </a>&nbsp;|&nbsp;
-            <a href="#">Política de privacidade</a>
+            <a href="#">{t("termsOfUse")}</a>&nbsp;|&nbsp;
+            <a href="#">{t("privacyPolicy")}</a>
         </footer>
     </main>);
 }

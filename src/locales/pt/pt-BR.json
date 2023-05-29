@@ -1,0 +1,91 @@
+{
+  "translations": {
+    "credit": {
+      "titles": {
+        "primary": "Descubra qual é o melhor cartão de crédito para você",
+        "secundary": "(Leva menos de 1 minuto)"
+      },
+      "stageOne": {
+        "titleStage": "O que é mais importante para você?",
+        "cardOne": "Limite Crédito Alto",
+        "cardTwo": "Sem Anuidade",
+        "cardThree": "Milhas Aéreas",
+        "cardFour": "Aprovação Rápida"
+      },
+      "stageTwo": {
+        "titleStage": "Em qual grupo você se encaixa?",
+        "cardOne": "Autônomo / MEI",
+        "cardTwo": "CLT",
+        "cardThree": "Aposentadoria/ Pensionista",
+        "cardFour": "Funcionário Público",
+        "cardFive": "Desempregado"
+      },
+      "stageThree": {
+        "titleStage": "E por último... Você está negativado?",
+        "cardOne": "Sim",
+        "cardTwo": "Não",
+        "cardThree": "Já estive"
+      },
+      "stageFinal": {
+        "titleStage": "Estamos quase lá!",
+        "subTitleStage": "Insira seus dados para ver nossa recomendação",
+        "inputName": "Nome",
+        "inputEmail": "E-mail",
+        "validCheck": "Li e concordo com os termos de serviço e aceito receber comunicações da ESTOA, que poderão ser canceladas a qualquer momento.",
+        "buttonTitle": "Ver meu Cartão de Crédito"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/conheca-o-cartao-superdigital-perfeito-para-quem-esta-negativado/",
+      "list":  20,
+      "nameForm": "cartaoformularioptbr"
+    },
+    "lending": {
+      "titles": {
+        "primary": "Descubra qual é o melhor empréstimo para você",
+        "secundary": "(Leva menos de 1 minuto)"
+      },
+      "stageOne": {
+        "titleStage": "De quanto precisa?",
+        "cardOne": "Até R$ 1.000,00",
+        "cardTwo": "Até R$ 2.000,00",
+        "cardThree": "Até R$ 5.000,00",
+        "cardFour": "Até R$ 15.000,00",
+        "cardFive": "Mais de R$ 15.000,00"
+      },
+      "stageTwo": {
+        "titleStage": "Em quanto tempo gostaria de pagar?",
+        "cardOne": "Até 1 ano",
+        "cardTwo": "Até 2 anos",
+        "cardThree": "Até 3 anos",
+        "cardFour": "Até 4 anos",
+        "cardFive": "Até 5 anos ou mais"
+      },
+      "stageThree": {
+        "titleStage": "Em qual grupo você se encaixa?",
+        "cardOne": "Autônomo / MEI",
+        "cardTwo": "CLT",
+        "cardThree": "Aposentadoria/ Pensionista",
+        "cardFour": "Funcionário Público",
+        "cardFive": "Desempregado"
+      },
+      "stageFour": {
+        "titleStage": "E por último... Você está negativado?",
+        "cardOne": "Sim",
+        "cardTwo": "Não",
+        "cardThree": "Já estive"
+      },
+      "stageFinal": {
+        "titleStage": "Estamos quase lá!",
+        "subTitleStage": "Insira seus dados para ver nossa recomendação",
+        "inputName": "Nome",
+        "inputEmail": "E-mail",
+        "validCheck": "Li e concordo com os termos de serviço e aceito receber comunicações da ESTOA, que poderão ser canceladas a qualquer momento.",
+        "buttonTitle": "Ver meu Cartão de Crédito"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/emprestimo-sim-a-solucao-ideal-para-negativados/",
+      "list":  19,
+      "nameForm": "emprestimoformularioptbr"
+    },
+    "termsOfUse": "Termos de uso",
+    "privacyPolicy": "Política de privacidade"
+  }
+}
