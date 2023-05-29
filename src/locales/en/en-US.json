@@ -1,0 +1,91 @@
+{
+  "translations": {
+    "credit": {
+      "titles": {
+        "primary": "Find out which credit card is right for you",
+        "secundary": "Answer the following questions and our artificial intelligence will choose the best card for you."
+      },
+      "stageOne": {
+        "titleStage": "What's most important for you in a credit card?",
+        "cardOne": "Get high cash backs",
+        "cardTwo": "No annual fees",
+        "cardThree": "Earn points, miles or travel perks",
+        "cardFour": "Save money on interest"
+      },
+      "stageTwo": {
+        "titleStage": "Which best describes you?",
+        "cardOne": "Self-Employed",
+        "cardTwo": "Employed",
+        "cardThree": "Retired",
+        "cardFour": "Civil/public servant",
+        "cardFive": "Unemployed"
+      },
+      "stageThree": {
+        "titleStage": "What’s your credit score these days?",
+        "cardOne": "Good - From 630 to 850",
+        "cardTwo": "Below Good - below 629",
+        "cardThree": "I'm not sure"
+      },
+      "stageFinal": {
+        "titleStage": "We've Found the Best Loan for you!",
+        "subTitleStage": "You are very close, fill the following to see the Loan we've found just for you.",
+        "inputName": "Your Name...",
+        "inputEmail": "Your Email...",
+        "validCheck": "I have read and accept the terms of service, and I agree to receive communications from ESTOA, which may be canceled at any time.",
+        "buttonTitle": "SEE LOAN RIGHT NOW!"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/target-redcard-credit-card-save-5-ordinary-the-use-of-it/",
+      "list": 31,
+      "nameForm": "cartaoformularioeua"
+    },
+    "lending": {
+      "titles": {
+        "primary": "Find out which loan is right for you",
+        "secundary": "Answer the following questions and our artificial intelligence will choose the best loan for you."
+      },
+      "stageOne": {
+        "titleStage": "How much do you need?",
+        "cardOne": "$500 to $1.000",
+        "cardTwo": "$1.000 to $2.500",
+        "cardThree": "$2.500 to $5.000",
+        "cardFour": "$5.000 to $10.000",
+        "cardFive": "More than $10.000"
+      },
+      "stageTwo": {
+        "titleStage": "When do you want to pay?",
+        "cardOne": "12 months",
+        "cardTwo": "24 months",
+        "cardThree": "36 months",
+        "cardFour": "60 months",
+        "cardFive": "84 months"
+      },
+      "stageThree": {
+        "titleStage": "Which best describes you?",
+        "cardOne": "Self-Employed",
+        "cardTwo": "Employed",
+        "cardThree": "Retired",
+        "cardFour": "Civil/public servant",
+        "cardFive": "Unemployed"
+      },
+      "stageFour": {
+        "titleStage": "What’s your credit score these days? ",
+        "cardOne": "Good - From 630 to 850",
+        "cardTwo": "Below Good - below 629",
+        "cardThree": "I'm not sure"
+      },
+      "stageFinal": {
+        "titleStage": "We've Found the Best Loan for you!",
+        "subTitleStage": "You are very close, fill the following to see the Loan we've found just for you.",
+        "inputName": "Your Name...",
+        "inputEmail": "Your Email...",
+        "validCheck": "I have read and accept the terms of service, and I agree to receive communications from ESTOA, which may be canceled at any time.",
+        "buttonTitle": "SEE LOAN RIGHT NOW!"
+      },
+      "url": "https://estoaresearch.com/ideal-para-voce/ready-capital-sba-loans-find-out-how-it-works/",
+      "list": 32,
+      "nameForm": "emprestimoformularioeua"
+    },
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy Policy"
+  }
+}
