@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Credit from "./components/credit/Credit";
 import Lending from "./components/lending/Lending";
-
+/**teste */
 function App() {
 
     return (<div className="App">
